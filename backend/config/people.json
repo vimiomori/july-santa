@@ -1,0 +1,23 @@
+{
+  "crista": {
+    "wants": ["something cool", "a good time", "fun things to do", "tucker"]
+  },
+  "tucker": {
+    "wants": ["a tank", "a new watch", "a book on samurais", "a kendo dojo"]
+  },
+  "jen": {
+    "wants": ["a new spikeball ball", "a ticket to see a spikeball match"]
+  },
+  "kaz": {
+    "wants": []
+  },
+  "zack": {
+    "wants": []
+  },
+  "cleo": {
+    "wants": ["hamburger", "carrots", "a new toy"]
+  },
+  "other": {
+    "wants": []
+  }
+}
