@@ -1,10 +1,13 @@
-FROM node:16.20.1
+FROM node:18-alpine
 
-RUN npm install -g npm@8.19.4
-RUN npm install -g @vue/cli@4.5.15
+WORKDIR /app
 
-RUN mkdir /srv/app && chown node:node /srv/app
+EXPOSE 5175
 
-USER node
+COPY package.json package-lock.json ./
 
-WORKDIR /srv/app
+RUN npm install --silent
+
+COPY . ./
+
+CMD ["npm", "run", "dev"]

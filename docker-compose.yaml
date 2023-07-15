@@ -1,23 +1,19 @@
 version: '3.7'
 services:
-    
   backend:
     build: 
       context: backend
       dockerfile: Dockerfile
     ports: 
-      - "8080:8080"
-    networks: 
-      - integration
+      - "5175:5175"
 
   frontend:
     build: 
       context: frontend
       dockerfile: Dockerfile
-    command: nodemon start frontend/app.js
     volumes: 
       - "./frontend:/app/"
     depends_on: 
       - backend
     ports: 
-      - "3000:3000"
+      - "8080:80"
