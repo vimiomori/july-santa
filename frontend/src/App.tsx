@@ -1,34 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import santabeach from './assets/santa-beach.jpeg'
 import './App.css'
+import SearchInput from './SearchInput'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [attempts, setAttempts] = useState(0)
+  const threeAttempts = attempts >= 3
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div id="App">
+      <div
+        className="search-box"
+        style={{ backgroundImage: 'url(' + santabeach + ')' }}
+      >
+        <header>
+          <h1>tell me what you'd like for christmas in july</h1>
+          <p>(you can have anything you want)</p>
+        </header>
+        <section className="middle"></section>
+        <section className="good-stuff">
+          <SearchInput setAttempts={setAttempts} />
+          <div className="message-area">
+            {threeAttempts && (
+              <p>this would go faster if you told me your name</p>
+            )}
+          </div>
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
