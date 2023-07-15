@@ -11,17 +11,20 @@
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
+}
+
+.sub-heading {
+  font-size: 28px;
 }
 
 .search-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-between;
   margin-top: 40px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,8 +38,20 @@ p {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  margin-bottom: 35px;
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .message-area {
   min-height: 100px;
+}
+
+.shadow {
+  box-shadow: var(--shadow);
 }

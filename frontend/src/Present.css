@@ -1,0 +1,24 @@
+.Present {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left {
+  width: 300px;
+  margin-right: 20px;
+  background-color: rgba(40, 69, 103, 0.43);
+  border-radius: 6px;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.right {
+  width: 600px;
+  margin-right: 20px;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+}
