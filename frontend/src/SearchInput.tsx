@@ -8,12 +8,7 @@ interface SearchInputProps {
   submitHandler: (name: string) => void
 }
 
-export default function SearchInput({
-  setAttempts,
-  setSubmitted,
-  startAudio,
-  submitHandler,
-}: SearchInputProps) {
+export default function SearchInput({ submitHandler }: SearchInputProps) {
   const inputRef = useRef<HTMLInputElement>(null)
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()

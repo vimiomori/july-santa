@@ -2,11 +2,9 @@ import { useState, useEffect } from 'react'
 import santabeach from './assets/santa-beach.jpeg'
 // import hoho from './assets/Hoho.m4a'
 import SearchInput from './SearchInput'
-import { getHelloWorld, getJoke, getPresent } from './api'
+import { getJoke, getPresent } from './api'
 import './App.css'
 import Present from './Present'
-
-const friends = ['tucker', 'crista', 'jen', 'zach', 'kaz']
 
 function App() {
   const [attempts, setAttempts] = useState(0)
@@ -30,7 +28,8 @@ function App() {
   }
 
   useEffect(() => {
-    console.log('loaded')
+    console.log('loaded', submitted)
+    setPresent('')
   }, [])
 
   function cleanupName(inputText: string) {
