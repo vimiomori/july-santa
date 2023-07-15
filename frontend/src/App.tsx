@@ -1,11 +1,17 @@
 import santabeach from './assets/santa-beach.jpeg'
 import './App.css'
+import SearchInput from './SearchInput'
 
 function App() {
   return (
     <div id="App">
-      <h1>santa in july</h1>
-      <img src={santabeach} alt="santa literally on the beach" />
+      <div
+        className="search-box"
+        style={{ backgroundImage: 'url(' + santabeach + ')' }}
+      >
+        <h1>santa in july</h1>
+        <SearchInput />
+      </div>
     </div>
   )
 }
