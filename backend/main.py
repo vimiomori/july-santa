@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import Union
 from random import randrange
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
@@ -47,7 +47,10 @@ def read_present(name):
     else:
         options = CONFIG[name]
     present = options[randrange(len(options))]
-    imageURL = search_image(present["search"])
+    try:
+        imageURL = search_image(present["search"])
+    except:
+        raise HTTPException(status_code=404, detail="Failed to search image.")
     return {
         "response": present["text"],
         "imageURL": imageURL
