@@ -1,23 +1,98 @@
 {
-  "crista": {
-    "wants": ["something cool", "a good time", "fun things to do", "tucker"]
-  },
-  "tucker": {
-    "wants": ["a tank", "a new watch", "a book on samurais", "a kendo dojo"]
-  },
-  "jen": {
-    "wants": ["a new spikeball ball", "a ticket to see a spikeball match"]
-  },
-  "kaz": {
-    "wants": []
-  },
-  "zack": {
-    "wants": []
-  },
-  "cleo": {
-    "wants": ["hamburger", "carrots", "a new toy"]
-  },
-  "other": {
-    "wants": []
-  }
+  "crista": [
+    {
+      "text": "a trophy for being the best at splatoon",
+      "search": "splatoon"
+    }, {
+      "text": "Tucker",
+      "search": "tucker"
+    }, 
+    {
+      "text": "the best Connecticut pizza",
+      "search": "pizza"
+    }
+  ],
+  "tucker": [
+    {
+      "text": "a tank",
+      "search": "military+tank"
+    }, {
+      "text": "a new watch",
+      "search": "wrist+watch"
+    }, 
+    {
+      "text": "a book on samurais",
+      "search": "samurai"
+    },
+    {
+      "text": "a kendo dojo",
+      "search": "kendo"
+    },
+    {
+      "text": "Crista",
+      "search": "crista"
+    }
+  ],
+  "jen": [
+    {
+      "text": "a new spikeball ball",
+      "search": "spikeball"
+    }, {
+      "text": "a better spikeball team",
+      "search": "spikeball+team"
+    }, 
+    {
+      "text": "money to make the next Cars movie",
+      "search": "Cars+movie"
+    }
+  ],
+  "kaz": [
+    {
+      "text": "someone to play warhammer with",
+      "search": "nerd"
+    }
+  ],
+  "zack": [
+    {
+      "text": "the chance to be on Broadway",
+      "search": "Broadway"
+    }
+  ],
+  "cleo": [
+    {
+      "text": "a hamburger",
+      "search": "hamburger"
+    },
+    {
+      "text": "carrots",
+      "search": "carrots"
+    },
+    {
+      "text": "a new toy",
+      "search": "dog+toy"
+    }
+  ],
+  "other": [
+    {
+      "text": "some coal",
+      "search": "coal"
+    },
+    {
+      "text": "a barbie",
+      "search": "barbie"
+    },
+    {
+      "text": "a fire truck",
+      "search": "toy+fire+truck"
+    }
+  ],
+  "no": [
+    "Please make sure there are no typos in your request.",
+    "Ho ho no! That's not in my job description!",
+    "That toy is not for girls 😊",
+    "Please, no racist.",
+    "Oh, deer! That's a big no-no.",
+    "Ho ho! No no.",
+    "That's more like a Christmas present, not a Christmas in July present."
+  ]
 }
